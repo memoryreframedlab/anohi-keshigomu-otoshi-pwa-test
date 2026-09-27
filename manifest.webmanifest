@@ -1,0 +1,32 @@
+{
+  "id": "/anohi-keshigomu-otoshi-pwa-test/",
+  "name": "あの日の教室 ～消しゴム落とし～",
+  "short_name": "消しゴム落とし",
+  "start_url": "/anohi-keshigomu-otoshi-pwa-test/",
+  "scope": "/anohi-keshigomu-otoshi-pwa-test/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#332b26",
+  "theme_color": "#000000",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "index.icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
