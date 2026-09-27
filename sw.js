@@ -9,11 +9,11 @@
 //    PREFIX で始まる古い版のキャッシュだけ（CacheStorage を全部消すことはしない）。
 //  - 困った時の非常口：この Service Worker を登録解除して自分のキャッシュだけ消す版に差し替えれば元に戻る。
 
-const VERSION = '2026-09-27.pwa1-build27fac1e7';   // 一時テスト用サイト（/anohi-keshigomu-otoshi-pwa-test/）   // PWA 版の改訂＋ゲーム本体の build（index.pck の SHA-256 の先頭）
+const VERSION = '2026-09-27.pwa2-maskable-v2-build27fac1e7';   // 一時テスト用サイト（/anohi-keshigomu-otoshi-pwa-test/）   // PWA 版の改訂＋ゲーム本体の build（index.pck の SHA-256 の先頭）
 const PREFIX = 'keshigomu-pwa-test-';   // 一時テスト用：本番（keshigomu-pwa-…）とは別の名前。消すのはこの接頭辞の古い版だけ
 const CACHE = PREFIX + VERSION;
 const OFFLINE_URL = 'offline.html';
-const PRECACHE = [OFFLINE_URL, 'icon-192.png', 'icon-maskable-512.png'];
+const PRECACHE = [OFFLINE_URL, 'icon-192.png', 'icon-maskable-512-v2.png'];   // 2026-09-27：maskable アイコンを v2（約56%・Pixel 実機で外周が切れたため）へ
 
 self.addEventListener('install', (event) => {
 	event.waitUntil(
